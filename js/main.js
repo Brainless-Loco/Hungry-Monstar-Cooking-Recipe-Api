@@ -6,6 +6,7 @@ let modalBody = document.getElementById("modal-body");
 searchBar.addEventListener("input",(event)=>{
     let allResult = document.getElementById("search-results");
     let inputValue = document.getElementById("search-bar").value;
+    allResult.innerHTML = "";
     fetch(api + inputValue)
     .then(res => res.json())
     .then(data => {
