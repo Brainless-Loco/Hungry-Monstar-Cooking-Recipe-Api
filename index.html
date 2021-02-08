@@ -24,13 +24,7 @@
     <br>
     <br>
     <br>
-    <div id="search-results" class="mx-md-5 d-flex flex-wrap justify-content-center justify-content-md-start">
-        <div class="item">
-            <img src="images/bg.jpg" class="img-1" alt="">
-            <p class="text-white">Beef Akhni Achar</p>
-            <button id="itemno-" data-toggle="modal" data-target=".bd-example-modal-lg"
-                class="btn btn-block btn-outline-light col-8 mx-auto my-2" onclick="modalEdit(this.id)">Details</button>
-        </div>
+    <div id="search-results" class="mx-md-5 d-flex flex-wrap justify-content-center">
     </div>
     <br><br>
 
@@ -40,32 +34,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content border border-light bg-dark">
                 <div class="modal-header">
-                    <h5 class="modal-title text-light" id="exampleModalLabel">How to Make Beef Akhni Khuchuri 7 Days
+                    <h5 class="modal-title text-light" id="exampleModalLabel">How to Make <span id="recipeTitle"></span>
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body text-light">
-                    <div class="text-center mb-3">
-                        <img src="images/bg.jpg" class="img-2 rounded" alt="">
-                    </div>
-                    <p>
-                        Area:
-                        <br>
-                        Category:
-                        <br>
-                        Tags: <small class="font-italic"></small>
-                    </p>
-                    <h6 class="h6 text-info">Ingredients:</h6>
-                    <ul class="ml-4 small" >
-                        <li>
-                            <p><i class="far fa-dot-circle text-secondary"></i> 1 Pound something</p>
-                        </li>
-                    </ul>
-                    <h6 class="text-info text-center font-weight-bold h6">Instructions</h6>
-                    <p class="text-justify small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="btn col-md-4 col-lg-3 mx-auto btn-block btn-danger"><i class="fab fa-youtube"></i> Watch Process</a>
+                <div id="modal-body" class="modal-body text-light">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
